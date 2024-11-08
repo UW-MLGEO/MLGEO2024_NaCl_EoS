@@ -1,0 +1,31 @@
+name: eos_env
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - jupyterlab
+  - pyarrow
+  - plotly
+  - geopandas
+  - matplotlib
+  - numpy==1.26.4
+  - scipy
+  - pandas
+  - rasterio
+  - scikit-learn
+  - shapely
+  - netcdf4
+  - wget
+  - h5py
+  - zarr
+  - xarray
+  - obspy
+  - folium
+  - seaborn
+  - pytorch
+  - torchvision
+  - pip=20
+  - seaborn
+  - pip:
+    - pooch
