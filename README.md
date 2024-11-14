@@ -11,7 +11,7 @@ Fall 2024 ESS 569 project to increase efficiency of equation of state calculatio
 Fall 2024 ESS 569 project to increase efficiency of equation of state calculations for NaCl(aq) up to 10 GPa, 8 mol/kg.
 
 ### Motivations
-There is currently a need in the planetary science community for flexible representations describing the thermodynamic conditions of water and solutions at extreme low temperature and high pressure conditions relevant to icy moon and water rich exoplanet interiors. My group has developed a umber of such equations of state, including one for aqueous NaCl. However, current calculations using novel b-spline EoS for ice and solutions at extreme conditions are often too slow for implementation in icy moon and exoplanet geodynamic models--therefore, I am aiming to increase calculation efficiency with this project.
+There is currently a need in the planetary science community for flexible representations describing the thermodynamic conditions of water and solutions at extreme low temperature and high pressure conditions relevant to icy moon and water rich exoplanet interiors. My group has developed a number of such equations of state, including one for aqueous NaCl. However, current calculations using novel b-spline EoS for ice and solutions at extreme conditions are often too slow for implementation in icy moon and exoplanet geodynamic models--therefore, I am aiming to increase calculation efficiency with this project.
 
 ### Objectives 
 Recent benchmarking shows it takes ~ 30 seconds to calculate 1,000 pts; an optimisitic goal is to decrease this by a factor of 10. I will used a supervised learning approach to train on model PTM data up to 10 GPa, 10,000 K, 7 mol/kg (but possibly only 2 GPa unless I find a workaround for issues with large variance in certain properties). 
@@ -46,7 +46,7 @@ The data are sourced from the Gibbs energy local basis function equation of stat
 | Activity Coefficient|`gam`| - |
 | Excess Gibbs Energy     |`Gex`| J/kg |
 
-These thermodynamic models are self consistent, as all properties are derived as combinations of derivatives of Gibbs energy. They designed for ease of implementation in models of icy moon and water rich exoplanet interiors, as these are the environments in which solutions and ice are found at extreme pressure and low temperature conditions. However, the current routine of evaluating the spline functions (especially over a list of scattered points) is computationally slow relative to the needs of the most sophisticated models. Therefore, my goal is to use supervised learning to develop an ML algorithm that will accurately predict properties without evaluating the full EoS.
+These thermodynamic models are self consistent, as all properties are derived as combinations of derivatives of Gibbs energy. They are designed for ease of implementation in models of icy moon and water rich exoplanet interiors, as these are the environments in which solutions and ice are found at extreme pressure and low temperature conditions. However, the current routine of evaluating the spline functions (especially over a list of scattered points) is computationally slow relative to the needs of the most sophisticated models. Therefore, my goal is to use supervised learning to develop an ML algorithm that will accurately predict properties without evaluating the full EoS.
 
 The model data I am using is currently hosted on google drive (available here): https://drive.google.com/drive/folders/1_uFESfnrcsbmZZ5INQRrxB_oK4BcsKiu?usp=drive_link 
 
