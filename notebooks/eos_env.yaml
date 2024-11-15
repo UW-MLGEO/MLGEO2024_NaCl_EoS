@@ -27,5 +27,6 @@ dependencies:
   - torchvision
   - pip=20
   - seaborn
+  - pycaret
   - pip:
     - pooch
