@@ -85,8 +85,17 @@ And navigate to the first notebook, titled "generate_and_clean_model_NaClaq_data
 ## Notebook Descriptions
 
 **generate_and_clean_model_NaClaq_data.ipynb**: generates and cleans the dataset for aqueous NaCl solutions, preparing it for further analysis and modeling
+
 **Dimensionality_Reduction.ipynb**: applies dimensionality reduction techniques to the NaCl aqueous solutions dataset, such as Principal Component Analysis (PCA), to reduce the number of features while retaining essential information, with the aim of improving model efficiency 
+
 **EDA.ipynb**: performs exploratory data analysis (EDA) on the dataset, visualizing key features and identifying patterns to inform subsequent modeling efforts.
+
 **auto_ml.ipynb**: uses automated machine learning techniques from pycaret to find the best model(s) and tuned hyperparameters for the regression 
+
 **model_training_assessment.ipynb**: trains various machine learning models on the cleaned NaCl dataset, evaluates their performance, and assesses accuracy and generalization capabilities
+
 **computational_time_analysis.ipynb**: analyzes the computational time required for training and deploying different machine learning models, exploring the trade-offs between accuracy and computational cost
+
+
+## License
+This open source code is distributed under an MIT license, which allows its usage, modification, and distribution subject to basic preservation of copyright and license notices.
