@@ -9,13 +9,13 @@ Fall 2024 ESS 569 project to increase efficiency of equation of state calculatio
 </div>
 
 ## Project Description
-Fall 2024 ESS 569 project to increase efficiency of equation of state calculations for NaCl(aq) up to 10 GPa, 8 mol/kg.
+Fall 2024 ESS 569 project to increase efficiency of equation of state calculations for NaCl(aq) up to 1 GPa, 7 mol/kg.
 
 ### Motivations
 There is currently a need in the planetary science community for flexible representations describing the thermodynamic conditions of water and solutions at extreme low temperature and high pressure conditions relevant to icy moon and water rich exoplanet interiors. My group has developed a number of such equations of state, including one for aqueous NaCl. However, current calculations using novel b-spline EoS for ice and solutions at extreme conditions are often too slow for implementation in icy moon and exoplanet geodynamic models--therefore, I am aiming to increase calculation efficiency with this project.
 
 ### Objectives 
-Recent benchmarking shows it takes ~ 30 seconds to calculate 1,000 pts; an optimisitic goal is to decrease this by a factor of 10. I will used a supervised learning approach to train on model PTM data up to 10 GPa, 10,000 K, 7 mol/kg (but possibly only 2 GPa unless I find a workaround for issues with large variance in certain properties). 
+Recent benchmarking shows it takes ~ 30 seconds to calculate 1,000 pts; an optimisitic goal is to decrease this by a factor of 10. I will used a supervised learning approach to train on model PTM data up to 1 GPa, 500 K, and concentrations of 7 mol/kg. 
 
 ### Data
 The data are sourced from the Gibbs energy local basis function equation of state (EoS) for NaCl(aq) by JM Brown and B Journaux, currently hosted in the open source SeaFreeze repository (https://github.com/Bjournaux/SeaFreeze). The python implementation was developed by P Espinoza and myself last winter. The dataset spans 22 thermodynamic variables for NaCl-water solutions of 0-7 mol/kg NaCl from 240-501 K and 0-1,000 MPa (1 GPa). Variables and units are as follows:
