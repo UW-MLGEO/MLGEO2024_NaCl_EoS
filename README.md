@@ -73,6 +73,8 @@ Necessary packages include:
 - seaborn
 - matplotlib
 - sklearn
+- pycaret
+- keras 
 
 ## How to Run
 
@@ -96,6 +98,7 @@ And navigate to the first notebook, titled "generate_and_clean_model_NaClaq_data
 
 **computational_time_analysis.ipynb**: analyzes the computational time required for training and deploying different machine learning models, exploring the trade-offs between accuracy and computational cost
 
+**deep_learning_exploration.ipynb**: implements several DL approaches including an FNN, an RNN, and a physically informed custom loss function. Benchmarks DL approaches aghainst CML and discusses tradeoffs.
 
 ## License
 This open source code is distributed under an MIT license, which allows its usage, modification, and distribution subject to basic preservation of copyright and license notices.
